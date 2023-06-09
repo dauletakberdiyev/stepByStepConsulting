@@ -1,0 +1,21 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.bg-light-blue{
+  background-color: #e3f2fd;
+}
+.bg-blue{
+  background-color: #0033A1;
+}
+.font-gray{
+  color: #9EA1A2;
+}
+.font-blue{
+  color: #0033A1;
+}
