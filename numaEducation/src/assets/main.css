@@ -2,11 +2,13 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: content-box;
+  font-family: 'Arial';
 }
 a{
   text-decoration: none;
   color: inherit;
 }
+
 .bg-light-blue{
   background-color: #e3f2fd;
 }
@@ -18,4 +20,25 @@ a{
 }
 .font-blue{
   color: #0033A1;
+}
+.font-size-64{
+  font-size: 64px;
+}
+.font-size-48{
+  font-size: 48px;
+}
+.font-size-32{
+  font-size: 32px;
+}
+.font-size-16{
+  font-size: 16px;
+}
+.font-size-14{
+  font-size: 14px;
+}
+.opacity-50{
+  opacity: 50%;
+}
+.bg-img{
+  background-color: rgba(0, 0, 0, 0.7) !important;
 }

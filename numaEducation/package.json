@@ -8,7 +8,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "bootstrap-icons": "^1.10.5",
     "vue": "^3.3.2",
+    "vue-i18n": "^9.2.2",
     "vue-router": "^4.2.0"
   },
   "devDependencies": {
