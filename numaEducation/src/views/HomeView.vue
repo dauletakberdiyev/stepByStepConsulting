@@ -6,7 +6,7 @@
       {{ $t('home.main.desc')}}
     </div>
     <div class="text-center">
-      <button class="whatsapp-click btn bg-light-blue px-5 py-3 fw-bold">
+      <button class="whatsapp-click btn bg-light-blue px-5 py-3 fw-bold" @click="this.redirectToWhatsapp()">
         {{ $t('home.main.whatsapp_click')}}
       </button>
     </div>
@@ -61,12 +61,12 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="card text-white">
-            <img src="/public/turkey2.webp" class="card-img" alt="..." width="350" height="450">
+            <img src="/turkey2.webp" class="card-img" alt="..." width="350" height="450">
             <div class="card-img-overlay bg-img d-flex flex-column justify-content-between pb-5">
               <h1 class="card-title fw-bold">{{$t('home.summer_camp.turkey')}}</h1>
               <div>
                 <p class="card-text fs-4">{{$t('home.summer_camp.tr_desc')}}</p>
-                <button class="btn btn-light font-size-14 opacity-50">
+                <button class="btn btn-light font-size-14 opacity-50" @click="this.redirectToWhatsapp()">
                   {{$t('home.summer_camp.info')}}
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
@@ -78,12 +78,12 @@
         </div>
         <div class="carousel-item">
           <div class="card bg-dark text-white">
-            <img src="/public/germany2.jpg" class="card-img" alt="..." width="350" height="450">
+            <img src="/germany2.jpg" class="card-img" alt="..." width="350" height="450">
             <div class="card-img-overlay bg-img d-flex flex-column justify-content-between pb-5">
               <h1 class="card-title fw-bold">{{$t('home.summer_camp.german')}}</h1>
               <div>
                 <p class="card-text fs-4">{{$t('home.summer_camp.gr_desc')}}</p>
-                <button class="btn btn-light font-size-14 opacity-50">
+                <button class="btn btn-light font-size-14 opacity-50" @click="this.redirectToWhatsapp()">
                   {{$t('home.summer_camp.info')}}
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
@@ -104,4 +104,32 @@
       </button>
     </div>
   </section>
+  <section class="consulting my-5 mx-4 pt-5">
+    <div class="text-center font-size-32 fw-bold">
+      {{$t('home.consulting.title_text')}}
+    </div>
+    <div class="text-center font-size-16">
+      {{$t('home.consulting.desc')}}
+    </div>
+    <div class="text-center d-flex flex-column mt-4">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-down-square w-100" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 2.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+      </svg>
+      <button class="btn bg-light-blue mt-4 fw-bold px-3 py-3 btn-round" @click="this.redirectToWhatsapp()">
+        {{$t('home.consulting.btn_text')}}
+      </button>
+    </div>
+  </section>
 </template>
+
+<script>
+export default {
+  name: "Home",
+
+  methods:{
+    redirectToWhatsapp(){
+      window.open(this.whatsappLink, '_blank');
+    }
+  }
+}
+</script>

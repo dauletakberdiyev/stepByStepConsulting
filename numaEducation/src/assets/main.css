@@ -36,9 +36,21 @@ a{
 .font-size-14{
   font-size: 14px;
 }
+.font-size-12{
+  font-size: 12px;
+}
+.font-size-18{
+  font-size: 18px;
+}
 .opacity-50{
   opacity: 50%;
 }
 .bg-img{
   background-color: rgba(0, 0, 0, 0.7) !important;
+}
+.w-100{
+  width: 100%;
+}
+.btn-round{
+  border-radius: 50px;
 }
